@@ -1,1 +1,143 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    /* background-color: rgba(136, 143, 149, 0.447); */
+}
+main
+{
+    width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgb(0 0 0 / 10%), -30px 0px 40px rgb(0 0 0 / 10%);
+}
+.container header
+{
+ /* display: grid;
+ grid-template-columns:40% minmax(auto,60%) ;
+ grid-template-rows: 100vh; */
+ display: flex;
+ height: 100vh;
+}
+.container header .left-box
+{
+    flex: 2;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+   background-color: white;
+   padding: 0px 10px;
+}
+.container header .left-box h1{
+text-align: center;
+}
+.container header .left-box p
+{
+  color: darkgray;
+}
+.container header .left-box a
+{
 
+text-decoration: none;
+color: rgb(12, 6, 6);
+border: 1px solid gray;
+border-radius: 30px;
+padding: 15px 30px;
+margin-top: 20px;
+}
+.container header .right-box
+{
+    flex: 3;
+    flex-shrink: 1;
+    background: url(https://source.unsplash.com/De8wMYoSSBc);
+    background-size: cover;
+}
+.container .header
+{
+    background-color: rgba(58, 55, 55, 0.727);
+    text-align: center;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .header span
+{
+   display: inline-block; 
+   border-left: 1px solid white;
+   border-right: 1px solid white;
+   padding: 0px 10px;
+}
+
+
+/* image section */
+.container img{
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+.container .desc
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100px;
+    margin-top: 0px;
+
+}
+.container .shadow
+{
+   /* box-shadow: 0px 0px 10px  rgba(104, 108, 110, 0.829);  */
+}
+ footer
+{
+ height: 40vh; 
+ /* background-color: transparent;  */
+ display: flex;
+ flex-direction: column; 
+ align-items: center;
+ justify-content: center;
+ max-width: 900px;
+ margin: auto;
+}
+footer h1{
+    font-weight: bold;
+    font-size: 50px;
+    line-height:70px;
+}
+ footer p
+{
+    font-size: 18px;
+    margin-top: 20px;
+}
+/* media query */
+@media (max-width:900px)
+{
+    main
+    {
+        width: 100%;
+    }
+
+}
+@media (max-width:505px)
+{
+    .container header
+    {
+     flex-direction: column;
+    }
+    .container header .right-box
+    {
+        flex: 1;
+    }
+    .container header .left-box
+    {
+        flex: 1;
+    }
+}
